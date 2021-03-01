@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/vaporwave.png">
+
+    <title>YT-v1.0</title>
+  </head>
+  <body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">S H R E Y ∆ S H</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-manual">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="display-4 text-dark" style="margin-top: 60px;">Welcome to Youtube Music downloader, made by <b>Shreyash</b>.</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="card mt-manual-form">
+                    <div class="card-body">
+                        <form action="download" method="POST">
+                            <label class="col-form-label" for="url">Enter Youtube URL:</label>
+                            <input type="url" class="form-control" name="link" id="url" placeholder="https://..." size="50" required>
+                            <br>
+                            <input class="btn btn-primary btn-block" type="submit" value="Download">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer__title">S H R E Y ∆ S H</p>
+        <div class="footer__social">
+            <a href="https://www.instagram.com/oyeshrey/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/oyeshreyash" class="footer__icon"><i class='bx bxl-github' ></i></a>
+        </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>
